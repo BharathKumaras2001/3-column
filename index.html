@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+<style>
+  @media screen and (max-width:1440px){
+  body{
+    /* background-color:  hsl(0, 0%, 95%); */
+    margin: 40px;
+    font-family: 'Big Shoulders Display', cursive;
+font-family: 'Fraunces', serif;
+font-family: 'Lexend Deca', sans-serif;
+  
+  }
+  .main-div{
+    height: 330px;
+    width: 600px;
+    margin: 20px;
+    /* background-color:  hsl(0, 0%, 95%); */
+    background-color: hsl(0, 0%, 95%);
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+   justify-content:space-between;
+  }
+  .first-div{
+    height: 290px;
+    width:194px ;
+    background-color: hsl(31,77%,52%);
+    padding: 20px;
+    padding-left: 29px;
+    padding-right: 48px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* position: fixed; */
+  }
+  .second-div{
+    height: 290px;
+    width:194px ;
+    background-color:hsl(184,100%,22%);
+    padding: 20px;
+    padding-left:29px;
+    padding-right: 38px;
+  }
+  img{
+    margin-top: 32px;
+    height: 27px;
+  }
+  .third-div{
+    height: 290px;
+    width:180px ;
+    background-color: hsl(179,100%,13%);
+    padding: 20px;
+    padding-left: 29px;
+    padding-right: 48px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .first-para{
+    margin-top: 5px;
+    font-size: 10px;
+    color: white;
+    font-weight: lighter;
+    color: hsla(0,0%,100%,0.75);
+    line-height: 18px;
+    filter: blur(0.5px);
+    /* font-family: 'Lexend Deca', sans-serif; */
+  }
+  .heading{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+
+    font-family: 'Big Shoulders Display', cursive;
+  }
+  .but{
+    margin-top: 32px;
+    border-radius: 15px;
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid white;
+  }
+  .buttton{
+    margin-top: 13px;
+    border-radius: 15px;
+    padding: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid white;
+    }
+  }
+
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Sedans
+  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.
+
+  SUVs
+  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.
+
+  Luxury
+  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style. -->
+  
+  <div class="main-div">
+    <div class="first-div">
+      <img src="./images/icon-sedans.svg" alt="sadans">
+      <h1 class="heading"> Sedans</h1>
+      <p class="first-para"> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.
+        </p>
+        <button class="but">Learn More</button>
+    </div>
+    <div class="second-div">
+      <img src="./images/icon-suvs.svg" alt="suvs">
+      <h1 class="heading"> SUVs</h1>
+      <p class="first-para"> Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.
+        </p>
+        <button class="but">Learn More</button>
+    </div>
+    <div class="third-div">
+      <img src="./images/icon-luxury.svg" alt="luxury">
+      <h1 class="heading"> Luxury</h1>
+      <p class="first-para">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.
+        </p>
+        <button class="buttton">Learn More</button>
+      </div>
+   
+  </div>
+</body>
+</html>
